@@ -8,8 +8,8 @@ Hint: For this task you're only supposed to substitue characters. Not spaces, pu
 
 rot13("EBG13 rknzcyr.") == "ROT13 example."
 rot13("This is my first ROT13 excercise!" == "Guvf vf zl svefg EBG13 rkprepvfr!"
-
 """
+
 
 def rot13(string):
     message = []
@@ -22,6 +22,7 @@ def rot13(string):
             changed_char = c
         message.append(changed_char)
     return "".join(message)
+
 
 """
 def rot13(message):
@@ -36,6 +37,3 @@ def rot13(message):
 print(rot13('ABCDEFGHIJKLMNOPQRSTUVWXYZ'.lower()))
 print(rot13('EBG13 rknzcyr.'))
 print(rot13('This is my first ROT13 exercise!'))
-
-
-
